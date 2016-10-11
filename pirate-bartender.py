@@ -25,5 +25,9 @@ answers = {
 }
 
 for k,v in questions.items():
-    my_input = input(v)
+    my_input = (input(v))
     print(my_input)
+    if my_input == "yes" or my_input == "y":
+         answers[k] = True
+
+print(answers)
